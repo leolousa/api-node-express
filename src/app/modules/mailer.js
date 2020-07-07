@@ -14,8 +14,6 @@ const transport = nodemailer.createTransport({
   auth: { user, pass }
 });
 
-
-
 const handlebarOptions = {
   viewEngine: {
     extName: '.html',

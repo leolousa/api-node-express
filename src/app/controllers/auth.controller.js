@@ -83,6 +83,7 @@ router.post('/forgot_password', async (req, res) => {
       }
     });
 
+    // Envia o email
     mailer.sendMail({
       to: email,
       from: 'noreply@clinicafundamento.com.br',
@@ -140,4 +141,3 @@ router.post('/reset_password', async (req, res) => {
 
 
 module.exports = (app) => app.use('/auth', router)
-

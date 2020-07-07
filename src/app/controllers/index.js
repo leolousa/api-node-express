@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * Exportação do Filesistem mapeando o arquivos index.js em cada pasta
+ */
 module.exports = app => {
   fs
     .readdirSync(__dirname)
